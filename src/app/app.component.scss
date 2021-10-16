@@ -1,0 +1,47 @@
+// :host {
+//     margin-top: 0.5rem;
+//     margin-left: 0.5rem;
+//     margin-right: 0.5rem;
+//     display: block;
+// }
+
+.wrap {
+    background: cyan;
+    // height: 100vh;
+    // width: 100vw;
+
+    .header {
+        height: 48px;
+        background: red;
+    }
+
+    .wrap2 {
+        width: 100vw;
+        height: calc(100vh - 48px);
+    }
+
+    .first-column {
+        background: orange;
+        width: 200px;
+        transition: top 1s ease-out 0.5s;
+
+        &hidden{
+            width: 0;
+            transition: top 1s ease-out 0.5s;
+        }
+
+        .box-nav {
+            overflow-y: auto;
+            height: calc(100vh - 48px);
+        }
+    }
+
+    .second-column {
+        background: yellowgreen;
+
+        .box-content {
+            overflow-y: auto;
+            height: calc(100vh - 48px);
+        }
+    }
+}
